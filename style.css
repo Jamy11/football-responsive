@@ -1,4 +1,6 @@
-/*Common Styles*/
+/*-------------------------------------*\
+            Common Styles 
+\*-------------------------------------*/
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -6,9 +8,9 @@ body {
     margin: 0;
 }
 
-/*------------*\
-Header Start
-\*------------*/
+/*-------------------------------*\
+          Header Start
+\*-------------------------------*/
 
 .head-main {
     display: grid;
@@ -17,9 +19,7 @@ Header Start
     justify-content: center;
     align-items: center;
     background-color: #2D25A0;
-    /* width: 1440px; */
     height: 677px;
-    /* background-size: cover; */
 }
 
 .head {
@@ -35,15 +35,9 @@ Header Start
     font-weight: 700;
     width: 485px;
     height: 230px;
-    /* position: absolute;
-    left: 156px;
-    top: 207px; */
 }
 
 .head a {
-    /* position: absolute;
-    left: 156px;
-    top: 500px; */
     background-color: #E02C6D;
     width: 168px;
     height: 44px;
@@ -55,9 +49,6 @@ Header Start
 }
 
 .head img {
-    /* position: absolute;
-    top: 153px;
-    right: 141px; */
     width: 556px;
     height: 448px;
 }
@@ -67,8 +58,7 @@ Header Hover (Transform and Transition)
 \*-------------------------------------*/
 
 .head-main {
-    transition: all 1s ease-in;
-    /* transition-timing-function: ; */
+    transition: all 1s ease-in;   
 }
 
 .head-main:hover {
@@ -82,16 +72,15 @@ Header Hover (Transform and Transition)
 .head img:hover {
     transform: scale(1.15);}
 
-/*------------*\
-Player Info
-\*------------*/
+/*---------------------------*\
+         Player Info
+\*---------------------------*/
 
 .player-info {
     display: grid;
     justify-content: center;
     align-content: center;
     margin-top: 70px;
-
 }
 
 .player img {
@@ -103,14 +92,7 @@ Player Info
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 27px;
-    row-gap: 30px;
-    /* line-height: 27px; */
-    /* gap: 20px 5px; */
-    /* justify-self: center; */
-    /* height: 1503px;
-    width: 1050px; */
-    /* margin: 0 195px; */
-    
+    row-gap: 30px;   
 }
 
 
@@ -131,87 +113,42 @@ Player Info
     color: #6C6C6C;
 }
 
-/* .left-side {
-    position: relative;
-    left: 120px;
-}
-
-.right-side {
-    position: relative;
-    right: 120px;
-} */
-
 /*-------------------------------------*\
-Bonus Part 1
+           Bonus Part
 \*-------------------------------------*/
 
-    .live-game {
-        margin-top: 165px;
-    }
+.live-game {
+    margin-top: 165px;
+}
 
-    .lives {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+.lives {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
-    .live-info {
-        width: 469px;
-        height: 309px;
-        text-align: center;
-        justify-items: center;
-        margin-left: 30px;
-        padding: 15px;
-        border-left: 3px solid grey;
-    }
+.live-info {
+    width: 469px;
+    height: 309px;
+    text-align: center;
+    justify-items: center;
+    margin-left: 30px;
+    padding: 15px;
+    border-left: 3px solid grey;
+}
 
-    .live img{
-        width: 567px;
-        height: 427px;
-    }
+.live img{
+    width: 567px;
+    height: 427px;
+}
 
-    .live h2 {
-        font-size: 32px;
-    }
+.live h2 {
+    font-size: 32px;
+}
 
     
-
-/*------------*\
-    Footer 
-\*------------*/
-
-/* .social-info{
-    display: block; 
-    align-items: center; 
-    margin-left: auto;
-    margin-right: auto; 
-}
-
-.social-info img{
-    width: 484px;
-    height: 110px;
-}
-
-.logos{
-    display: flex;
-    margin: 20px 0;
-    position: relative;
-    left: 175px;
-}
-
-.logo{
-    height: 32px;
-    width: 32px;
-}
-
-.social-info p{
-    position: relative;
-    left: 124px;
-    font-size: 18px;
-    font-weight: 400px;
-} */
-
-
-
+/*-------------------------------------*\
+                Footer 
+\*-------------------------------------*/
 
 .social-info {
     display: grid;
@@ -221,22 +158,10 @@ Bonus Part 1
     margin-bottom: 63px;
 }
 
-/* .social-info {
-    margin-top: 158px;
-    position: absolute;
-    left: 478px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 63px;
-} */
-
 .social-info img {
     width: 484px;
     height: 110px;
 }
-
 
 .logos {
     display: flex;
@@ -258,11 +183,14 @@ Bonus Part 1
 }
 
 /*-------------------------------------*\
-Media Query for Phone 
+         Media Query for Phone 
 \*-------------------------------------*/
 
 @media all and (max-width:688px) {
 
+/*-------------------------------------*\
+        Header Start Responsive- PHONE
+\*-------------------------------------*/
     .head-main {
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -270,8 +198,7 @@ Media Query for Phone
         align-content: center;
         background-color: #2D25A0;
         width: 100%;
-        height: 100%;
-        
+        height: 100%; 
     }
 
     .head{
@@ -287,22 +214,26 @@ Media Query for Phone
     }
 
     .head img {
-       
         width: 75%;
         height: 100%;
         margin-left: 40px;
-        } 
+    }
 
+/*-------------------------------------*\
+         Player-Info Responsive- PHONE
+\*-------------------------------------*/
 
     .players {
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
         align-items: center;
         margin-top: 30%;
-
     }
 
-    /* bonus part  */
+/*-------------------------------------*\
+          Bonus Responsive - PHONE 
+\*-------------------------------------*/
+
     .lives {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -316,18 +247,14 @@ Media Query for Phone
         border:none;
     }
 
-    /* .live{
-        width: 70%;
-    } */
-    
-
     .live img{
         margin-top: 55%;
         margin-left: 7%;
         width: 83%;
     }
-
-    /* footer part  */
+/*-------------------------------------*\
+           Footer Responsive- PHONE
+\*-------------------------------------*/
     .social-info {
         width: 100%;
     }
@@ -336,16 +263,18 @@ Media Query for Phone
         width: 80%;
         margin-left: 15px;
     }
-
 }
 
 /*-------------------------------------*\
-Media Query for Tab 
+        Media Query for Tab 
 \*-------------------------------------*/
 
 @media all and (min-width: 669px) and (max-width:992px)  {
 
-    
+/*-------------------------------------*\
+        Header Start Responsive - TAB
+\*-------------------------------------*/
+  
     .head-main {
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -353,32 +282,34 @@ Media Query for Tab
         align-content: center;
         background-color: #2D25A0;
         width: 100%;
-        height: 100%;
-        
+        height: 100%; 
     }
 
     .head h1 {
         margin-top: 10%;
         width: 100%;
-        
     }
 
     .head img {
         margin-top: 5%;
         width: 75%;
         margin-left: 40px;
-        } 
+    } 
+
+/*-------------------------------------*\
+        Player-Info- TAB
+\*-------------------------------------*/
 
     .players {
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
         align-items: center;
         margin-top: 30%;
-        /* margin-left: 30px; */
-
     }
-    /* bonus part */
 
+/*-------------------------------------*\
+         Bonus Part Responsive- TAB
+\*-------------------------------------*/
 
     .live {
         display: grid;
@@ -390,9 +321,6 @@ Media Query for Tab
 
     .live-info {
         width: 80%;
-        
-        /* margin-left: 30px; */
-        /* padding: 15px; */
         border:none;
     }
 
@@ -401,16 +329,15 @@ Media Query for Tab
         width: 150%;
     }
 
-
-    /* footer part */
+/*-------------------------------------*\
+         Footer Responsive- TAB
+\*-------------------------------------*/
 
     .social-info {
         width: 100%;
         margin-bottom: 40%;
-        /* padding: 50%; */
+        
     }
-
-
 
     .social-info img {
         width: 90%;

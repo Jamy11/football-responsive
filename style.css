@@ -141,6 +141,40 @@ Player Info
     right: 120px;
 } */
 
+/*-------------------------------------*\
+Bonus Part 1
+\*-------------------------------------*/
+
+    .live-game {
+        margin-top: 165px;
+    }
+
+    .lives {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .live-info {
+        width: 469px;
+        height: 309px;
+        text-align: center;
+        justify-items: center;
+        margin-left: 30px;
+        padding: 15px;
+        border-left: 3px solid grey;
+    }
+
+    .live img{
+        width: 567px;
+        height: 427px;
+    }
+
+    .live h2 {
+        font-size: 32px;
+    }
+
+    
+
 /*------------*\
     Footer 
 \*------------*/
@@ -240,52 +274,60 @@ Media Query for Phone
         
     }
 
-    /* .container-head{
-        width: 100%;
-    } */
-        .head{
-            margin-bottom: 5%;
-        }
+    .head{
+        margin-bottom: 5%;
+    }
 
     .head h1 {
         margin-top: 20%;
         width: 100%;
-        /* height: 20%; */
     }
     .head a {
         margin-top: 10%;
-        /* width: 100%; */
-        /* height: 20%; */
     }
 
     .head img {
        
         width: 75%;
         height: 100%;
-        /* justify-content: center;
-        align-content: center; */
         margin-left: 40px;
         } 
 
-    /* .container-head{
-        display: grid;
-        grid-template-columns: repeat(1,1fr); 
-        row-gap: 30px;
-        height: 200px;
-    } */
 
-    /* .player-info {
-        margin-right: 30px;
-    } */
     .players {
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
         align-items: center;
         margin-top: 30%;
-        /* margin-left: 30px; */
 
     }
 
+    /* bonus part  */
+    .lives {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .live-info {
+        width: 80%;
+        border:none;
+    }
+
+    /* .live{
+        width: 70%;
+    } */
+    
+
+    .live img{
+        margin-top: 55%;
+        margin-left: 7%;
+        width: 83%;
+    }
+
+    /* footer part  */
     .social-info {
         width: 100%;
     }
@@ -298,11 +340,12 @@ Media Query for Phone
 }
 
 /*-------------------------------------*\
-Media Query for Phone 
+Media Query for Tab 
 \*-------------------------------------*/
 
 @media all and (min-width: 669px) and (max-width:992px)  {
 
+    
     .head-main {
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -314,35 +357,18 @@ Media Query for Phone
         
     }
 
-    /* .container-head{
-        width: 100%;
-    } */
-        
-
     .head h1 {
         margin-top: 10%;
         width: 100%;
-        /* height: 20%; */
+        
     }
 
     .head img {
         margin-top: 5%;
         width: 75%;
-        /* justify-content: center;
-        align-content: center; */
         margin-left: 40px;
         } 
 
-    /* .container-head{
-        display: grid;
-        grid-template-columns: repeat(1,1fr); 
-        row-gap: 30px;
-        height: 200px;
-    } */
-
-    /* .player-info {
-        margin-right: 30px;
-    } */
     .players {
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
@@ -351,6 +377,32 @@ Media Query for Phone
         /* margin-left: 30px; */
 
     }
+    /* bonus part */
+
+
+    .live {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .live-info {
+        width: 80%;
+        
+        /* margin-left: 30px; */
+        /* padding: 15px; */
+        border:none;
+    }
+
+    .live img{
+        margin-left: 80%;
+        width: 150%;
+    }
+
+
+    /* footer part */
 
     .social-info {
         width: 100%;

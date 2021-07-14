@@ -1,6 +1,6 @@
 /*Common Styles*/
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
     margin: 0;
@@ -10,7 +10,7 @@ body{
 Header Start
 \*------------*/
 
-.container-head{
+.container-head {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2,1fr);
@@ -19,26 +19,31 @@ Header Start
     background-color: #2D25A0;
     /* width: 1440px; */
     height: 677px;
-    margin-bottom: 70px;
     /* background-size: cover; */
 }
 
-.head h1{
+.head {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.head h1 {
     color: #FFFFFF;
     font-size: 64px;
     line-height: 80px;
     font-weight: 700;
     width: 485px;
     height: 230px;
-    position: absolute;
+    /* position: absolute;
     left: 156px;
-    top: 207px;
+    top: 207px; */
 }
 
-.head a{
-    position: absolute;
+.head a {
+    /* position: absolute;
     left: 156px;
-    top: 500px;
+    top: 500px; */
     background-color: #E02C6D;
     width: 168px;
     height: 44px;
@@ -49,79 +54,92 @@ Header Start
     margin-top: 27px;
 }
 
-.head img{
-    position: absolute;
+.head img {
+    /* position: absolute;
     top: 153px;
-    right: 141px;
+    right: 141px; */
     width: 556px;
     height: 448px;
 }
 
-/*------------*\
-Header Hover 
-\*------------*/
+/*-------------------------------------*\
+Header Hover (Transform and Transition)
+\*-------------------------------------*/
 
-.container-head{
+.head-main {
     transition: all 1s ease-in;
     /* transition-timing-function: ; */
 }
 
-.container-head:hover{
+.head-main:hover {
     background-color: #463bdd;
 }
 
-.head img{
+.head img {
     transition: transform 1s ease-in;
 }
 
-.head img:hover{
+.head img:hover {
     transform: scale(1.15);}
 
 /*------------*\
 Player Info
 \*------------*/
 
-.player img{
+.player-info {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 70px;
+
+}
+
+.player img {
     width: 300px;
     height: 256px;
 }
 
-.players{
+.players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* column-gap: 27px; */
+    column-gap: 27px;
     row-gap: 30px;
-    line-height: 27px;
+    /* line-height: 27px; */
     /* gap: 20px 5px; */
-    justify-items: center;
+    /* justify-self: center; */
+    /* height: 1503px;
+    width: 1050px; */
+    /* margin: 0 195px; */
+    
 }
 
-.player{
+
+.player {
     width: 300px;
     height: 474px;
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
-.player h2{
+.player h2 {
     font-size: 28px;
 }
 
-.player p{
+.player p {
     font-size: 16px;
     line-height: 26px;
     color: #6C6C6C;
 }
 
-.left-side{
+/* .left-side {
     position: relative;
     left: 120px;
 }
 
-.right-side{
+.right-side {
     position: relative;
     right: 120px;
-}
+} */
 
 /*------------*\
     Footer 
@@ -158,7 +176,18 @@ Player Info
     font-weight: 400px;
 } */
 
-.social-info{
+
+
+
+.social-info {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 158px;
+    margin-bottom: 63px;
+}
+
+/* .social-info {
     margin-top: 158px;
     position: absolute;
     left: 478px;
@@ -167,20 +196,87 @@ Player Info
     justify-content: center;
     align-items: center;
     margin-bottom: 63px;
-}
+} */
 
-.social-info img{
+.social-info img {
     width: 484px;
     height: 110px;
 }
 
-.logos{
+
+.logos {
     display: flex;
     margin: 20px 0;
+    justify-content: center;
+    align-content: center;
 }
 
-.logo{
+.logo {
     width: 32px;
     width: 32px;
     margin-left: 15px;
+}
+
+.social-info p{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/*-------------------------------------*\
+Media Query for Phone 
+\*-------------------------------------*/
+
+@media(max-width:688px) {
+
+    .head-main {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-content: center;
+        background-color: #2D25A0;
+        
+    }
+
+    .container-head{
+        width: 100%;
+        }
+
+    .head h1,a {
+        width: 100%;
+    }
+
+    .head img {
+        width: 75%;
+        /* justify-content: center;
+        align-content: center; */
+        margin-left: 40px;
+        } 
+
+    /* .container-head{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+        row-gap: 30px;
+        height: 200px;
+    } */
+
+    .player-info {
+        margin-right: 30px;
+    }
+    .players {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .social-info {
+        width: 100%;
+    }
+
+    .social-info img {
+        width: 80%;
+        margin-left: 15px;
+    }
+
 }

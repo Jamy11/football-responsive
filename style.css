@@ -17,10 +17,10 @@ Header Start
     justify-content: center;
     align-items: center;
     background-color: #2D25A0;
-    width: 1440px;
+    /* width: 1440px; */
     height: 677px;
     margin-bottom: 70px;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .head h1{
@@ -104,5 +104,62 @@ Player Info
 }
 
 /*------------*\
-    Footer
+    Footer 
 \*------------*/
+
+/* .social-info{
+    display: block; 
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.social-info img{
+    width: 484px;
+    height: 110px;
+}
+
+.logos{
+    display: flex;
+    margin: 20px 0;
+    position: relative;
+    left: 175px;
+}
+
+.logo{
+    height: 32px;
+    width: 32px;
+}
+
+.social-info p{
+    position: relative;
+    left: 124px;
+    font-size: 18px;
+    font-weight: 400px;
+} */
+
+.social-info{
+    margin-top: 158px;
+    position: absolute;
+    left: 478px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-info img{
+    width: 484px;
+    height: 110px;
+}
+
+.logos{
+    display: flex;
+    margin: 20px 0;
+}
+
+.logo{
+    width: 32px;
+    width: 32px;
+    margin-left: 15px;
+}

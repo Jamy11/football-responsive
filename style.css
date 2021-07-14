@@ -58,6 +58,26 @@ Header Start
 }
 
 /*------------*\
+Header Hover 
+\*------------*/
+
+.container-head{
+    transition: all 1s ease-in;
+    /* transition-timing-function: ; */
+}
+
+.container-head:hover{
+    background-color: #463bdd;
+}
+
+.head img{
+    transition: transform 1s ease-in;
+}
+
+.head img:hover{
+    transform: scale(1.15);}
+
+/*------------*\
 Player Info
 \*------------*/
 
@@ -146,6 +166,7 @@ Player Info
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 63px;
 }
 
 .social-info img{

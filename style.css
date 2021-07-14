@@ -20,6 +20,7 @@ Header Start
     width: 1440px;
     height: 677px;
     margin-bottom: 70px;
+    background-size: cover;
 }
 
 .head h1{
@@ -101,3 +102,7 @@ Player Info
     position: relative;
     right: 120px;
 }
+
+/*------------*\
+    Footer
+\*------------*/

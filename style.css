@@ -184,6 +184,8 @@ Header Hover (Transform and Transition)
 
 /*-------------------------------------*\
          Media Query for Phone 
+         ///////////////////
+         //////////////////
 \*-------------------------------------*/
 
 @media all and (max-width:688px) {
@@ -267,6 +269,9 @@ Header Hover (Transform and Transition)
 
 /*-------------------------------------*\
         Media Query for Tab 
+
+        //////////////
+        //////////////
 \*-------------------------------------*/
 
 @media all and (min-width: 669px) and (max-width:992px)  {
